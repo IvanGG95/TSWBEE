@@ -1,8 +1,13 @@
 body {
- 
+  /*background-image: url("icon/thumb-1920-667236.jpg") ;*/
+
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100%;
 }
 
 .principal{
+    background-color: rgba(100, 100, 100, 0.3);
+
   	height: 360px;
   	width: 590px;
   	border-style: solid;
@@ -12,12 +17,20 @@ body {
 	margin:0;
 	position: absolute	
 }
+
+.back{
+  background-color: rgba(200, 200, 200, 0.4);
+}
 .menu{
 	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
 	margin:0;
 	position: absolute;
+}
+
+.nava{
+  background-image: url("icon/stretched.jpg") ;
 }
 
 .button {
