@@ -1,6 +1,6 @@
 body {
-  /*background-image: url("icon/thumb-1920-667236.jpg") ;*/
-
+  /*background-image: url("icon/azul.jpg") ;
+*/
   background-size: cover; /* Resize the background image to cover the entire container */
   height: 100%;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .back{
-  background-color: rgba(200, 200, 200, 0.4);
+  background-color: rgba(250, 250, 250, 0.6);
 }
 .menu{
 	top: 50%;
