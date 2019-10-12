@@ -120,6 +120,9 @@ class UsersController extends BaseController {
 			// populate the User object with data form the form
 			$user->setUsername($_POST["username"]);
 			$user->setPassword($_POST["passwd"]);
+			$user->setName($_POST["nombre"]);
+			$user->setEmail($_POST["email"]);
+			$user->setPhone($_POST["telefono"]);
 
 			try{
 				$user->checkIsValidForRegister(); // if it fails, ValidationException

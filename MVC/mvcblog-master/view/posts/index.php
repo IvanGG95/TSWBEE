@@ -44,7 +44,7 @@ $view->setVariable("title", "Posts");
 
 				<input type="hidden" name="id" value="<?= $post->getId() ?>">
 
-				<a href="#" 
+				<a href="#"
 				onclick="
 				if (confirm('<?= i18n("are you sure?")?>')) {
 					document.getElementById('delete_post_<?= $post->getId() ?>').submit()

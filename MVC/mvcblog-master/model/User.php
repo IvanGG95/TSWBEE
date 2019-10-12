@@ -30,9 +30,16 @@ class User {
 	* @param string $username The name of the user
 	* @param string $passwd The password of the user
 	*/
-	public function __construct($username=NULL, $passwd=NULL) {
+	private $name;
+	private $email;
+	private $phone;
+
+	public function __construct($username=NULL, $passwd=NULL ,$name=NULL ,$email=NULL ,$phone=NULL) {
 		$this->username = $username;
 		$this->passwd = $passwd;
+		$this->name = $name;
+		$this->email = $email;
+		$this->phone = $phone;
 	}
 
 	/**
@@ -72,6 +79,34 @@ class User {
 		$this->passwd = $passwd;
 	}
 
+
+
+	public function getName() {
+		return $this->name;
+	}
+
+	public function getEmail() {
+		return $this->email;
+	}
+
+	public function getPhone() {
+		return $this->phone;
+	}
+
+	
+
+	public function setName($name) {
+		$this->name = $name;
+	}
+
+	public function setEmail($email) {
+		$this->email = $email;
+	}
+
+	public function setPhone($phone) {
+		$this->phone = $phone;
+	}
+
 	/**
 	* Checks if the current user instance is valid
 	* for being registered in the database
@@ -89,6 +124,15 @@ class User {
 		}
 		if (strlen($this->passwd) < 5) {
 			$errors["passwd"] = "Password must be at least 5 characters length";
+		}
+		if (strlen($this->name) < 5) {
+			$errors["name"] = "Name must be at least 5 characters length";
+		}
+		if (strlen($this->email) < 5) {
+			$errors["email"] = "Email must be at least 5 characters length";
+		}
+		if (strlen($this->phone) < 5) {
+			$errors["phone"] = "Phone must be at least 5 characters length";
 		}
 		if (sizeof($errors)>0){
 			throw new ValidationException($errors, "user is not valid");
