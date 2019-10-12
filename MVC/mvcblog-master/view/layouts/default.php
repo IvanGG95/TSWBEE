@@ -19,21 +19,18 @@ $currentuser = $view->getVariable("currentusername");
 <body>
 	<!-- header -->
 	<header>
-		<h1>Blog</h1>
-		<nav id="menu" style="background-color:grey">
-			<ul>
-				<li><a href="index.php?controller=posts&amp;action=index">Posts</a></li>
 
-				<?php if (isset($currentuser)): ?>
-					<li><?= sprintf(i18n("Hello %s"), $currentuser) ?>
-						<a 	href="index.php?controller=users&amp;action=logout">(Logout)</a>
-					</li>
 
-				<?php else: ?>
-					<li><a href="index.php?controller=users&amp;action=login"><?= i18n("Login") ?></a></li>
-				<?php endif ?>
-			</ul>
-		</nav>
+			<nav class="navbar navbar-dark bg-dark text-light">
+			  <a class="navbar-brand">IDriBEE</a>
+
+			  <form class="form-inline">
+			  	<div class="mr-5"><a 	href="index.php?controller=users&amp;action=logout">(User)</a></div>
+			    <img src="icon/out.png" height="27" width="27">
+			  </form>
+			</nav>
+
+		
 	</header>
 
 	<main>
