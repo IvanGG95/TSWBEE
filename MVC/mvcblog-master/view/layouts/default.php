@@ -25,12 +25,14 @@ $currentuser = $view->getVariable("currentusername");
 			  <a class="navbar-brand">IDriBEE</a>
 
 			  <form class="form-inline">
-			  	<div class="mr-5"><a 	href="index.php?controller=users&amp;action=logout">(User)</a></div>
+			  	<div class="mr-5">User</div>
+					<a 	href="index.php?controller=users&amp;action=logout">
 			    <img src="icon/out.png" height="27" width="27">
+					</a>
 			  </form>
 			</nav>
 
-		
+
 	</header>
 
 	<main>
