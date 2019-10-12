@@ -1,11 +1,11 @@
 body {
-  /*background-image: url("icon/azul.jpg") ;
-*/font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-size: cover; /* Resize the background image to cover the entire container */
   height: 100%;
 }
 
-input[type=text] {
+input[type=text] 
+{
   width: 100%;
   padding: 14px 24px;
   margin: 0px 0;
@@ -15,15 +15,14 @@ input[type=text] {
   transition: 0.5s;
   outline: none;
 }
-h2{
+h2
+{
   color:white;
 }
 
-.color{
+.color
+{
   color: #343c44;
-}
-input[type=text]:focus {
-  border: 5px solid #555;
 }
 
 .principal{
@@ -32,7 +31,7 @@ input[type=text]:focus {
   	height: 360px;
   	width: 590px;
   	border-style: solid #343c44;
-    border-radius: 30px;
+    border-radius: 5px;
   		top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
@@ -46,7 +45,7 @@ input[type=text]:focus {
     height: 500px;
     width: 590px;
     border-style: solid #343c44;
-    border-radius: 30px;
+    border-radius: 5px;
       top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -86,7 +85,6 @@ input[type=text]:focus {
 .button1 {
   background-color: white; 
   color: #343c44; 
-  border: 5px solid #888888;
 }
 
 .button1:hover {
