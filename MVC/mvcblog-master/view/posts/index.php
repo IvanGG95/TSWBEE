@@ -22,47 +22,46 @@ $view->setVariable("title", "Posts");
 	<div class="section">
 		<div class="container">
 			<div class="row border-bottom mt-5">
-				<h3 class="col-9">Raiz/Carpeta</h3>
-				<div class="btn-group mb-1 mt-1" role="group" aria-label="Basic example">
+				<h3 class="col-10 mr-4">Raiz</h3>
+				<div class="btn-group mb-1 mt-1 ml-5" role="group" aria-label="Basic example">
 	  				<button type="button" class="btn"><img src="icon/add.png" height="24" width="24"></button>
-	  				<button type="button" class="btn"><img src="icon/upload.png" height="24" width="24"></button>
 	  				<button type="button" class="btn"><img src="icon/delete.png" height="24" width="24"></button>
-	  				<button type="button" class="btn"><img src="icon/share.png" height="24" width="24"></button>
-	  				<button type="button" class="btn"><img src="icon/download.png" height="24" width="24"></button>
+
+
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-2 mt-5 text-center">
-					<img src="icon/file.png" height="75" width="75">
-					<p>file 1</p>
+					<img src="icon/folder.png" height="75" width="75">
+					<p>folder 1</p>
 				</div>
 				<div class="col-sm-2 mt-5 text-center">
-					<img src="icon/file.png" height="75" width="75">
-					<p>file 2</p>
+					<img src="icon/folder.png" height="75" width="75">
+					<p>folder 2</p>
 				</div>
 				<div class="col-sm-2 mt-5 text-center">
-					<img src="icon/file.png" height="75" width="75">
-					<p>file 3</p>
+					<img src="icon/folder.png" height="75" width="75">
+					<p>folder 3</p>
 				</div>
 				<div class="col-sm-2 mt-5 text-center">
-					<img src="icon/file.png" height="75" width="75">
-					<p>file 4</p>
+					<img src="icon/folder.png" height="75" width="75">
+					<p>folder 4</p>
 				</div>
 				<div class="col-sm-2 mt-5 text-center">
-					<img src="icon/file.png" height="75" width="75">
-					<p>file 5</p>
+					<img src="icon/folder.png" height="75" width="75">
+					<p>folder 5</p>
 				</div>
 				<div class="col-sm-2 mt-5 text-center">
-					<img src="icon/file.png" height="75" width="75">
-					<p>file 6</p>
+					<img src="icon/folder.png" height="75" width="75">
+					<p>folder 6</p>
 				</div>
 				<div class="col-sm-2 mt-5 text-center">
-					<img src="icon/file.png" height="75" width="75">
-					<p>file 7</p>
+					<img src="icon/folder.png" height="75" width="75">
+					<p>folder 7</p>
 				</div>
 				<div class="col-sm-2 mt-5 text-center">
-					<img src="icon/file.png" height="75" width="75">
-					<p>file 8</p>
+					<img src="icon/folder.png" height="75" width="75">
+					<p>folder 8</p>
 				</div>
 			</div>
 		</div>
