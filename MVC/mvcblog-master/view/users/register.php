@@ -9,27 +9,31 @@ $view->setVariable("title", "Register");
 ?>
 <div class="principal2">
 	<div class="menu">
-		<h1><?= i18n("Register")?></h1>
+		<h2><?= i18n("Register")?></h2>
 		<form action="index.php?controller=users&amp;action=register" method="POST">
-			<?= i18n("Username")?>: <input type="text" name="username"
-			value="<?= $user->getUsername() ?>">
-			<?= isset($errors["username"])?i18n($errors["username"]):"" ?><br>
+			<input type="text" name="username" value="<?= $user->getUsername() ?>" 
+			placeholder="<?= i18n("Username")?>">
+	
 
-			<?= i18n("Password")?>: <input type="text" name="passwd"
-			value="">
-			<?= isset($errors["passwd"])?i18n($errors["passwd"]):"" ?><br>
+			<input type="text" name="passwd" value="" 
+			placeholder="<?= i18n("Password")?>">
+			
 
-			<?= i18n("E-mail")?>: <input type="text" name="email"
-			value="">
-			<?= isset($errors["email"])?i18n($errors["email"]):"" ?><br>
+			<input type="text" name="email" value="" 
+			placeholder="<?= i18n("E-mail")?>">
+	
 
-			<?= i18n("Nombre")?>: <input type="text" name="nombre"
-			value="">
-			<?= isset($errors["nombre"])?i18n($errors["nombre"]):"" ?><br>
+			<input type="text" name="nombre" value="" 
+			placeholder="<?= i18n("Nombre")?>">
 
-			<?= i18n("Telefono")?>: <input type="text" name="telefono"
-			value="">
-			<?= isset($errors["telefono"])?i18n($errors["telefono"]):"" ?><br>
+			<input type="text" name="telefono" value="" 
+			placeholder="<?= i18n("Telefono")?>">
+			<h4><?= isset($errors["telefono"])?i18n($errors["telefono"]):"" ?>
+			<?= isset($errors["nombre"])?i18n($errors["nombre"]):"" ?>
+			<?= isset($errors["email"])?i18n($errors["email"]):"" ?>
+			<?= isset($errors["passwd"])?i18n($errors["passwd"]):"" ?>
+			<?= isset($errors["username"])?i18n($errors["username"]):"" ?>
+			</h4>
 
 			<input class="button button1 " type="submit" value="<?= i18n("Register")?>">
 		</form>

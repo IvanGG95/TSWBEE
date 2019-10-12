@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 <title>IDriBEE</title>
 </head>
 <body>
 
+<?php
+require_once(__DIR__."/../core/ViewManager.php");
+$view = ViewManager::getInstance();
+$errors = $view->getVariable("errors");
+$user = $view->getVariable("user");
+$view->setVariable("title", "Register");
+?>
 
 <div class="principal2">
 	<div class="menu">
 		<h2>Registrarse</h2>
-	<form>
+	<form action="index.php?controller=users&amp;action=register" method="POST">
 		<input type="text" name="usuario" placeholder="Usuario">
-		
+
 		<input type="text" name="password" placeholder="Password"><br>
-		
+
 		<input type="text" name="email" placeholder="E-mail"><br>
 		
 		<input type="text" name="nombre" placeholder="Nombre"><br>
