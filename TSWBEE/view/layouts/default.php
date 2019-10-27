@@ -24,13 +24,23 @@ $currentuser = $view->getVariable("currentusername");
 				<a class="navbar-brand" href="index.php?controller=files&amp;action=index">
   					<img src="icon/bee_icon.png" height="50" width="50" >IDriBEE
   				</a>
-			  
-			  <form class="form-inline">
-			  	<select class="selectpicker show-tick">
-  <option >Español</option>
-  <option >English</option>
 
-</select>
+			  <form class="form-inline">
+					<!--
+			  	<select class="selectpicker show-tick">
+  					<option ><a href="index.php?controller=language&amp;action=change&amp;lang=es"><?= i18n("Spanish") ?></a></option>
+  					<option ><a href="index.php?controller=language&amp;action=change&amp;lang=en"><?= i18n("English") ?></a></option>
+					</select>-->
+
+					<ul id="languagechooser">
+						<li><a href="index.php?controller=language&amp;action=change&amp;lang=es">
+							<?= i18n("Spanish") ?>
+						</a></li>
+						<li><a href="index.php?controller=language&amp;action=change&amp;lang=en">
+							<?= i18n("English") ?>
+						</a></li>
+					</ul>
+
 			  	<div class="mr-5"><?=$_SESSION["currentuser"]?></div>
 					<a 	href="index.php?controller=users&amp;action=logout">
 			    <img src="icon/out.png" height="27" width="27">
