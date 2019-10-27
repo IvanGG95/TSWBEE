@@ -18,6 +18,9 @@ array(
 	"Directory name" => "Nombre del Directorio",
 	"E-mail" => "E-mail",
 	"Nombre" => "Nombre",
-	"Telefono" => "Telefono"
+	"Telefono" => "Telefono",
+	"Crear cuenta" => "Crear cuenta",
+	"Seleccionar archivo" => "Seleccionar archivo",
+	"No se eligió archivo" => "No se eligió archivo"
 )
 ?>

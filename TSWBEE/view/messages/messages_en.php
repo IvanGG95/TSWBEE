@@ -20,6 +20,10 @@ $i18n_messages = array(
 	"Directory name" => "Directory name",
 	"E-mail" => "E-mail",
 	"Nombre" => "Name",
-	"Telefono" => "Phone number"
+	"Telefono" => "Phone number",
+	"Crear cuenta" => "Create account",
+	"Seleccionar archivo" => "Select file",
+	"No se eligió archivo" => "File not chosen"
+
 )
 ?>
