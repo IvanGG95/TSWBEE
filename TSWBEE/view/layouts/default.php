@@ -3,6 +3,7 @@
 
 $view = ViewManager::getInstance();
 $currentuser = $view->getVariable("currentusername");
+if(isset($currentuser)){
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -37,10 +38,10 @@ $currentuser = $view->getVariable("currentusername");
 			  	<div class="mr-5"><?=$_SESSION["currentuser"]?></div>
 
 					<!-- Imagenes Idioma-->
-					<a href="index.php?controller=language&amp;action=change&amp;lang=es">
+					<a class="mr-4" href="index.php?controller=language&amp;action=change&amp;lang=es">
 						<img src="./icon/espana.png" onclick='this.form.submit()' height="27" width="27">
 					</a>
-					<a href="index.php?controller=language&amp;action=change&amp;lang=en">
+					<a class="mr-4" href="index.php?controller=language&amp;action=change&amp;lang=en">
 							<img src="./icon/reino-unido.png" onclick='this.form.submit()' height="27" width="27">
 					</a>
 					<!-- Imagen Logout-->
@@ -65,3 +66,7 @@ $currentuser = $view->getVariable("currentusername");
 
 </body>
 </html>
+<?php }else{
+
+	$view->redirect("users", "login");
+}?>
