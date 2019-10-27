@@ -32,16 +32,18 @@ $currentuser = $view->getVariable("currentusername");
   					<option ><a href="index.php?controller=language&amp;action=change&amp;lang=en"><?= i18n("English") ?></a></option>
 					</select>-->
 
-					<ul id="languagechooser">
-						<li><a href="index.php?controller=language&amp;action=change&amp;lang=es">
-							<?= i18n("Spanish") ?>
-						</a></li>
-						<li><a href="index.php?controller=language&amp;action=change&amp;lang=en">
-							<?= i18n("English") ?>
-						</a></li>
-					</ul>
+					<!--CurrentUser-->
 
 			  	<div class="mr-5"><?=$_SESSION["currentuser"]?></div>
+
+					<!-- Imagenes Idioma-->
+					<a href="index.php?controller=language&amp;action=change&amp;lang=es">
+						<img src="./icon/espana.png" onclick='this.form.submit()' height="27" width="27">
+					</a>
+					<a href="index.php?controller=language&amp;action=change&amp;lang=en">
+							<img src="./icon/reino-unido.png" onclick='this.form.submit()' height="27" width="27">
+					</a>
+					<!-- Imagen Logout-->
 					<a 	href="index.php?controller=users&amp;action=logout">
 			    <img src="icon/out.png" height="27" width="27">
 					</a>
