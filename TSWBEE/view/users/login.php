@@ -11,11 +11,21 @@ $errors = $view->getVariable("errors");
         <div class="row justify-content-center align-items-center" style="height:100vh">
             <div class="col-4">
                 <div class="card">
-                    <div class="card-body">	
+                    <div class="card-body">
           					<div class="text-light">
           						<img src="icon/bee_icon.png" height="50" width="50" >IDriBEE
           					</div>
-                    		<h2 class="text-light"><?= i18n("Login") ?>n</h2>
+                    <div style="float: right">
+                      <!-- Imagenes Idioma-->
+            					<a href="index.php?controller=language&amp;action=change&amp;lang=es">
+            						<img src="./icon/espana.png" onclick='this.form.submit()' height="27" width="27">
+            					</a>
+            					<a href="index.php?controller=language&amp;action=change&amp;lang=en">
+            							<img src="./icon/reino-unido.png" onclick='this.form.submit()' height="27" width="27">
+            					</a>
+                    </div>
+
+                    		<h2 class="text-light"><?= i18n("Login") ?></h2>
                     		<br>
                     		<form action="index.php?controller=users&amp;action=login" method="POST">
                     			<div class="form-group">
@@ -31,7 +41,7 @@ $errors = $view->getVariable("errors");
 	                            <button type="button" id="sendlogin" class="btn btn-dark"><a class="text-light" href="index.php?controller=users&amp;action=register"><?= i18n("Crear cuenta")?></a></button>
 	                            <input type="submit" value="<?= i18n("Login") ?>" class="btn btn-dark"></input>
                         	</form>
-                            
+
                     </div>
                 </div>
             </div>

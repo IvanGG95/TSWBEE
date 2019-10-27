@@ -13,6 +13,15 @@ $view->setVariable("title", "Register");
                 <div class="card">
                     <div class="card-body">
                     	<div class="text-light"><img src="icon/bee_icon.png" height="50" width="50" >IDriBEE</div>
+											<div style="float: right">
+												<!-- Imagenes Idioma-->
+												<a href="index.php?controller=language&amp;action=change&amp;lang=es">
+													<img src="./icon/espana.png" onclick='this.form.submit()' height="27" width="27">
+												</a>
+												<a href="index.php?controller=language&amp;action=change&amp;lang=en">
+														<img src="./icon/reino-unido.png" onclick='this.form.submit()' height="27" width="27">
+												</a>
+											</div>
                     	<h2 class="text-light"><?= i18n("Register")?></h2>
                     	<br>
                     	<form action="index.php?controller=users&amp;action=register" method="POST">
@@ -52,4 +61,3 @@ $view->setVariable("title", "Register");
             </div>
     	</div>
 	</div>
-
